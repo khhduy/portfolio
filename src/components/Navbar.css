@@ -1,0 +1,131 @@
+/* GPT code? */
+/* Navbar.css */
+
+/* Navbar container styles */
+/* Apply Lato to the body text */
+
+
+/* Apply Montserrat to the navigation links */
+.navbar {
+  background: #272829; /* Change the background color as desired */
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Navbar logo/text styles */
+.navbar-container a {
+  color: #fff; /* Text color */
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile menu icon styles */
+.menu-icon {
+  display: none; /* Hide initially on larger screens */
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links:hover {
+  color: #007BFF; /* Change the color on hover as desired */
+}
+
+/* Button styles */
+.btn--outline {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 10px 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn--outline:hover {
+  background: #007BFF; /* Change the background color on hover as desired */
+  color: #fff; /* Change the text color on hover as desired */
+}
+
+/* Mobile menu styles */
+.nav-menu.active {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background: #333; /* Background color for the mobile menu */
+  width: 100%;
+  flex-direction: column;
+  opacity: 1;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.nav-menu.active .nav-item {
+  padding: 15px 0;
+}
+
+/* Font Awesome icon styles */
+.fas {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Responsive design - show/hide mobile menu icon */
+@media screen and (max-width: 960px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Apply Montserrat to the navigation links */
+.nav-links {
+  font-family: 'Montserrat', sans-serif;
+}
