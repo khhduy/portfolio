@@ -17,9 +17,9 @@ function Cards() {
 						/>
 						<CardItem
 							src='images/img-2.jpg'
-							text='Use Vue to consume API of Rest Countries with some cool functions added :^)'
+							text='Use Vue to consume API of Rest Countries with some cool functions added, deployed but netlify banned my account due to fraud detection??? :DD'
 							label='Rest countries API'
-							link='https://kzduy.github.io/Vue-consume-api/'
+							link='/'
 						/>
 						<CardItem
 							src='images/img-3.jpg'
