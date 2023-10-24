@@ -12,8 +12,12 @@ function App() {
       <Router>
         <Navbar />
         <HeroSection />
-        <Cards />
-        <Footer />
+        <div id="project-section">
+          <Cards />
+        </div>
+        <div id="contact-section">
+          <Footer />
+        </div>
         <Routes>
           <Route path='/' exact />
         </Routes>

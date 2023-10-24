@@ -6,19 +6,8 @@ import './Navbar.css';
 
 function Navbar() {
 	const [click, setClick] = useState(false);
-	// const [button, setButton] = useState(true);
-
 	const handleClick = () => setClick(!click);
 	const closeMobileMenu = () => setClick(false);
-
-	// const showButton = () => {
-	// 	if (window.innerWidth <= 960) {
-	// 		setButton(false);
-	// 	} else {
-	// 		setButton(true);
-	// 	}
-	// };
-	// window.addEventListener('resize', showButton);
 
 	return (
 		<>
@@ -33,14 +22,14 @@ function Navbar() {
 					<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
 						<li className='nav-item'>
-							<Link to='/Cards' className='nav-links' onClick={closeMobileMenu}>
+							<a href="#project-section" className='nav-links' onClick={closeMobileMenu}>
 								Projects
-							</Link>
+							</a>
 						</li>
 						<li className='nav-item'>
-							<Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+							<a href="#contact-section" className='nav-links' onClick={closeMobileMenu}>
 								Contact
-							</Link>
+							</a>
 						</li>
 					</ul>
 				</div>
